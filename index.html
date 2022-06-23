@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Danh sách sản phẩm</title>
+        <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+	<style>
+	@import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
+	{
+	padding: 0;
+	margin: 0;
+	}
+	
+	body{
+		font-family: 'League Gothic', sans-serif;
+		font-size: 22px;	
+		line=height:1.15;
+	}
+	#wrapper{
+		max-width: 1170px;
+		margin: 0 auto;
+	}
+	.headline{
+		text-align:center;
+		margin: 40px 0px;
+	}
+	h3{
+		font-size: 40px;
+		color: red;
+		padding: 10px 20px;
+		text-transform:uppercase;
+		border: 3px solid red;
+		display: inline-block;
+		color: #555;
+		text-shadow:blue 1px 2px 4px;
+		font-weight:normal;
+	}
+	ul.products{
+		list-style:none;
+		display:flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	ul.products li{
+		flex-basis: 25%;
+		padding-left: 15px;
+		padding-right: 15px;
+		padding-bottom: 40px;
+		box-sizing:border-box;
+	}
+	ul.products li img{
+		width:250px;
+		height:250px;
+		max-width:100%;
+		max-height:101%;
+		object-fit: cover;
+		background-size: cover;	
+	}
+	ul.products li .product-top{
+		position: relative;
+		overflow:hidden;
+	}
+	ul.products li .product-top .product-thumb{
+		display: block;
+	}
+	ul.products li:hover .product-top .product-thumb img{
+		filter: opacity(80%);
+	}
+	ul.products li .product-top .product-thumb img{
+		display: block;
+	}
+	ul.products li .product-top a.buy-now{
+		text-transform: uppercase;
+		text-decoration: none;
+		text-align: center;
+		display: block;
+		background-color: rgb(170, 239, 170);
+		color:red;
+		padding: 10px 0px;
+		position: absolute;
+		bottom: -46px;
+		width: 100%;
+		transition: 0.3s ease-in-out;
+		opacity: 0.8;
+	}
+	ul.products li:hover a.buy-now{
+		bottom: 0px;
+	}
+	ul.products li .product-info{
+		padding: 10px 0px;
+	}
+	ul.products li .product-info a{
+		display: block;
+		text-decoration: none;
+	}
+	ul.products li .product-info a.product-cat{
+		font-size: 14px;
+		text-transform: uppercase;
+		color:#111;
+		padding: 3px 0px;
+	}
+	ul.products li .product-info a.product-name{
+		color: rgb(255, 0, 238);
+		padding: 3px 0px;
+	}
+	ul.products li .product-info .product-price{
+		color: blueviolet;
+		padding: 2px 0px;
+		font-weight: 600;
+	}
+		
+	</style>
+	<div id="wrapper">
+    	<div class="headline">
+      		<h3>Sản phẩm bán chạy quán 3Beo</h3>
+        </div>
+        <ul class="products">
+            <li>
+            	<div class="product-item">
+                	<div class="product-top">
+                    	<a href="" class="product-thumb">
+                        	<img src="img/image1.jpg" alt="">
+                        </a>
+                        <a href="" class="buy-now">Mua ngay</a>
+						<a href="https://www.facebook.com/tran.dangkhoi.33" class="buy-now">Mua ngay</a>
+                     </div>
+                     <div class="product-info">
+                     	<a href="" class="product-cat">Giải khát</a>
+                        <a href="" class="product-name">Cam vắt</a>
+                        <div class="product-price">25.000</div>
+                     </div>
+                </div>
+            </li>
+          	<li>
+            	<div class="product-item">
+                	<div class="product-top">
+                    	<a href="" class="product-thumb">
+                        	<img src="img/image2.jpg" alt="">
+                        </a>
+						<a href="" class="buy-now">Mua ngay</a>
+                     </div>
+                     <div class="product-info">
+                     	<a href="" class="product-cat">Giải khát</a>
+                        <a href="" class="product-name">Trà sữa trân châu đường đen</a>
+                        <div class="product-price">28.000</div>
+                     </div>
+                </div>
+            </li>
+            <li>
+            	<div class="product-item">
+                	<div class="product-top">
+                    	<a href="" class="product-thumb">
+                        	<img src="img/image3.jpg" alt="">
+                        </a>
+                        <a href="" class="buy-now">Mua ngay</a>
+                     </div>
+                     <div class="product-info">
+                     	<a href="" class="product-cat">Giải khát</a>
+                        <a href="" class="product-name">Nước ép đào</a>
+                        <div class="product-price">30.000</div>
+                     </div>
+                </div>
+            </li>
+            <li>
+            	<div class="product-item">
+                	<div class="product-top">
+                    	<a href="" class="product-thumb">
+                        	<img src="img/image4.jpg" alt="">
+                        </a>
+                        <a href="" class="buy-now">Mua ngay</a>
+                     </div>
+                     <div class="product-info">
+                     	<a href="" class="product-cat">Giải khát</a>
+                        <a href="" class="product-name">Matcha trân châu</a>
+                        <div class="product-price">35.000</div>
+                     </div>
+                </div>
+            </li>
+            <li>
+            	<div class="product-item">
+                	<div class="product-top">
+                    	<a href="" class="product-thumb">
+                        	<img src="img/image5.jpg" alt="">
+                        </a>
+                        <a href="" class="buy-now">Mua ngay</a>
+                     </div>
+                     <div class="product-info">
+                     	<a href="" class="product-cat">Giải khát</a>
+                        <a href="" class="product-name">Nước ép dâu tằm</a>
+                        <div class="product-price">22.000</div>
+                     </div>
+                </div>
+            </li>
+            <li>
+            	<div class="product-item">
+                	<div class="product-top">
+                    	<a href="" class="product-thumb">
+                        	<img src="img/image6.jpg" alt="">
+                        </a>
+                        <a href="" class="buy-now">Mua ngay</a>
+                     </div>
+                     <div class="product-info">
+                     	<a href="" class="product-cat">Giải khát</a>
+                        <a href="" class="product-name">Nước chanh</a>
+                        <div class="product-price">22.000</div>
+                     </div>
+                </div>
+            </li>
+            <li>
+            	<div class="product-item">
+                	<div class="product-top">
+                    	<a href="" class="product-thumb">
+                        	<img src="img/image7.jpg" alt="">
+                        </a>
+                        <a href="" class="buy-now">Mua ngay</a>
+                     </div>
+                     <div class="product-info">
+                     	<a href="" class="product-cat">Giải khát</a>
+                        <a href="" class="product-name">Trà sữa kem cheese</a>
+                        <div class="product-price">28.000</div>
+                     </div>
+                </div>
+            </li>
+            <li>
+            	<div class="product-item">
+                	<div class="product-top">
+                    	<a href="" class="product-thumb">
+                        	<img src="img/image8.jpg" alt="">
+                        </a>
+                        <a href="" class="buy-now">Mua ngay</a>
+                     </div>
+                     <div class="product-info">
+                     	<a href="" class="product-cat">Giải khát</a>
+                        <a href="" class="product-name">Trà chanh</a>
+                        <div class="product-price">25.000</div>
+                     </div>
+                </div>
+            </li>
+        	
+        	</ul>
+    </div>
+</body>
+</html>
